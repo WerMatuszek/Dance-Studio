@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title > Formularz zapisu </title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="formularz.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script>
+		function zamknij(){ 
+			alert("Zostałeś zapisany!");
+			window.close();
+		}
+			
+		var zmienne = {
+			"Dla dzieci": {
+				"Poniedziałek": ["15:00", "18:00"],
+				"Sobota": ["9:30", "11:00"] },
+			"Dla młodzieży": {
+				"Wtorek": ["16:00", "19:30"],
+				"Piątek": ["15:00", "20:00"] },
+			"Dla kobiet": {
+				"Środa": ["17:00", "19:00"],
+				"Piątek": ["15:30", "19:30"] },
+			"Taniec w parach": {
+				"Czwartek": ["15:30", "18:30"],
+				"Sobota": ["11:30", "13:00"] }				
+		}
+		
+		window.onload = function() {
+			var zajecia = document.getElementById("zajecia");
+			var dzien = document.getElementById("dzien");
+			var godzina = document.getElementById("godzina");
+			for (var x in zmienne) {
+				zajecia.options[zajecia.options.length] = new Option(x, x); }
+			zajecia.onchange = function() {
+				godzina.length = 1;
+				dzien.length = 1;
+				for (var y in zmienne[this.value]) {
+					dzien.options[dzien.options.length] = new Option(y, y); }
+			}
+			dzien.onchange = function() {
+			godzina.length = 1;
+			var z = zmienne[zajecia.value][this.value];
+			for (var i = 0; i < z.length; i++) {
+				godzina.options[godzina.options.length] = new Option(z[i], z[i]); }
+			}
+		}
+	</script>
+	
+	<script>
+		$(document).ready(function() {
+			$("#druga").click(function() {
+				$("#hide").slideToggle("slow");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h1 id="dolacz"> Tańcz z nami! </h1>
+	<form name="formularz" onsubmit="zamknij();" id="formularz">
+		<div id="czesc1">
+			<label> Imię: </label>
+				<input type="text" name="imie" required>
+				<br></br>
+			<label> Nazwisko: </label>
+				<input type="text" name="nazwisko" required>
+				<br></br>
+			<label> Numer telefonu: </label>
+				<input type="tel" name="telefon" pattern="[0-9]{9}" required>
+				<br></br>
+			<label> E-mail: </label>
+				<input type="email" name="mail" required>
+				<br></br>
+			<label> Twoja płeć: </label>
+			<input type="radio" name="plec" value="Kobieta" required>
+	  			<label id="kobieta" for="kobieta"> Kobieta </label><br></br>
+	  		<input type="radio" name="plec" value="Mezczyzna" id="mezczyznadod">
+  				<label id="mezczyzna" for="mezczyzna"> Mężczyzna </label>
+				<br></br>
+			
+			<label> Rodzaj zajęć: </label>
+			<select name="wybor" id="zajecia" required>
+				<option value="" selected="selected"> Wybierz zajęcia </option>
+			</select><br><br>
+			<label> Dzień tygodnia: </label>
+			<select name="wybor" id="dzien" required>
+				<option value="" selected="selected"> Wybierz dzień </option>
+			</select><br><br>
+			<label> Godziny: </label>
+			<select name="wybor" id="godzina" required>
+				<option value="" selected="selected"> Wybierz godzinę </option>
+			</select><br><br>
+		</div>
+		<div id="czesc2">
+			<label id="uwagitxt"> Uwagi i pytania: </label>
+			<textarea rows="8" cols="50" name="pole" form="formularz" id="uwagi"></textarea>
+			<br></br>
+			<input type="checkbox" id="druga" name="druga">
+			<label id="drugatxt"> Dopisz drugą osobę </label><br></br>
+			<div id="hide" style="display:none;">
+				<label> Imię: </label>
+					<input type="text" name="imie2">
+					<br></br>
+				<label> Nazwisko: </label>
+					<input type="text" name="nazwisko2">
+					<br></br>
+			</div>
+		</div>
+		<input type="submit" value="Zapisz się" id="zapisz">
+	</form>
+</body>
+</html>

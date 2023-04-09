@@ -1,0 +1,100 @@
+.title{
+	font-family: 'Cherry Swash', cursive;
+	font-size: 50px;
+	text-align: center;
+	color: #DC0073;
+	margin-top: 5%;
+	margin-bottom: 5%;	
+}
+.text{
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 1%;
+}
+.group b{
+	font-family: 'Rubik', sans-serif;
+	font-size: 25px;
+	text-align: center;
+}
+#container{
+	width: 80%;
+	margin: auto;
+}
+#table1{
+	width: 99%;
+}
+#table1 th{
+	font-size: 22px;
+}
+#table1 td{
+	text-align: center;
+	font-size: 20px;
+	width: 15%;
+	border-right: 1px solid black;
+}
+#table1 td:last-child{
+	border: none;
+}
+#table2{
+	width: 99%;
+}
+#table2 th{
+	font-size: 22px;
+}
+#table2 td{
+	text-align: center;
+	font-size: 20px;
+	width: 15%;
+	border-right: 1px solid black;
+}
+#table2 td:last-child{
+	border: none;
+}
+#table3{
+	width: 99%;
+}
+#table3 th{
+	font-size: 22px;
+}
+#table3 td{
+	text-align: center;
+	font-size: 20px;
+	width: 15%;
+	border-right: 1px solid black;
+}
+#table3 td:last-child{
+	border: none;
+}
+#table4{
+	width: 99%;
+}
+#table4 th{
+	font-size: 22px;
+}
+#table4 td{
+	text-align: center;
+	font-size: 20px;
+	width: 15%;
+	border-right: 1px solid black;
+}
+#table4 td:last-child{
+	border: none;
+}
+@media only screen and (max-width: 600px) {
+	.title{
+		//margin-left: 17%;
+	}
+	#container{
+		margin-left: 17%;
+	}
+	#table2{
+		margin-left: -2%;
+	}
+	#table3{
+		margin-left: 0%;
+	}
+	#table4{
+		margin-left: 5%;
+	}
+}

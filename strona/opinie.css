@@ -1,0 +1,92 @@
+#submit{
+	float: right;
+	display: block;
+	background-color: #DC0073;
+	border-color: 2px solid white;
+	//box-shadow: 0px 0px 1px;
+	vertical-align: center;
+	text-align: center;
+	height:35px;
+	width:100px;
+	padding-top: 15px;
+	right: 0%;
+}
+#submit a{
+	color: #fff;
+}
+#submit:hover{
+	background-color: #ad005b;
+}
+#comments{
+	//background-color: #fff;
+	//height: 500px;
+	width: 80%;
+	margin: auto;
+}
+#formcontainer{
+	width: 80%;
+	margin: auto;
+}
+#form1{
+	//box-shadow: 0px 0px 1px;
+	width: 100%;
+	height: 240px;
+	background-color: #41EAD4;
+	padding-top: 1%;
+
+}
+#p1{
+	color: #fff;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	text-shadow: 0px 0px 1px black;
+}
+#nick{
+	position: relative;
+	width: 97.5%;
+	left: 1%;
+}
+#comment{
+	position: relative;
+	width: 97.5%;
+	margin-top: 1%;
+	left: 1%;
+	height: 69.5%;
+}
+.title{
+	font-family: 'Cherry Swash', cursive;
+	font-size: 50px;
+	text-align: center;
+	color: #DC0073;
+}
+.text{
+	font-family: 'Rubik', sans-serif;
+	font-size: 15px;
+	text-align: left;
+}
+.com{
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align:left;
+	width:100%;
+	border:2px solid #FFA985;
+	border-radius:2px;
+	position:relative;
+	background-color:#fff;
+}
+@media only screen and (max-width: 600px) {
+	#comments{
+		width: 100%;
+		margin-left: 7%;
+	}
+	#formcontainer{
+		width: 100%;
+		margin-left: 7%;
+	}
+	.title{
+		margin-left:15%;
+	}
+}

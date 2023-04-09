@@ -1,0 +1,44 @@
+.title{
+	font-family: 'Cherry Swash', cursive;
+	font-size: 50px;
+	text-align: center;
+	color: #DC0073;
+	margin-top: 5%;
+	margin-bottom: 5%;	
+}
+.text{
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 1%;
+}
+#container{
+	width: 80%;
+	margin: auto;
+	
+}
+#pricetable{
+	width: 99%;
+}
+#pricetable th{
+	font-size: 22px;
+}
+#pricetable td{
+	text-align: center;
+	font-size: 20px;
+	width: 15%;
+	border-right: 1px solid black;
+}
+#pricetable td:last-child{
+	border: none;
+}
+@media only screen and (max-width: 600px) {
+	.title{
+		margin-top: 100%;
+		margin-bottom: 20%;
+		margin-left: 17%;
+	}
+	#pricetable{
+		margin-left: 5%;
+	}	
+}

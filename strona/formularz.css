@@ -1,0 +1,137 @@
+body{
+	background-color: #F8EEFC;
+	font-family: 'Rubik', sans-serif;
+}
+#dolacz{
+	font-family: 'Cherry Swash', cursive;
+	color: #DC0073;
+	font-size: 60px;
+	position: relative;
+	text-align: center;
+}
+form{
+	display: flex;
+	align-items: center;
+}
+#czesc1{
+	padding: 0 80px;
+}
+#czesc2{
+	padding: 0 100px;
+}
+input[name=imie], input[name=nazwisko], input[name=telefon], input[name=mail]{
+	position: absolute;
+	left: 220px;
+}
+#kobieta, #mezczyzna{
+	position: absolute;
+	left: 260px;
+}
+input[name=plec]{
+	position: absolute;
+	left: 220px;
+}
+select{
+	width: 150px;
+	position: absolute;
+	left: 220px;
+}
+#uwagitxt{
+	position: relative;
+	left: 60px;
+}
+textarea{
+	position: relative;
+	top: 10px;
+	left: 60px;
+	resize: none;
+}
+#druga, #drugatxt{
+	position: relative;
+	left: 60px;
+}
+#hide{
+	position: relative;
+	left: 60px;
+}
+input[name=imie2], input[name=nazwisko2]{
+	position: absolute;
+	left: 100px;
+}
+#zapisz{
+	font-family: 'Rubik', sans-serif;
+	background-color: #DC0073;
+	border-radius: 8px;
+	font-size: 15px;
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	left: 750px;
+	top: 500px;
+	transition: all 0.2s ease-in;
+}
+#zapisz:hover{
+	background-color: #41EAD4;
+}
+
+@media only screen and (max-width: 600px) {
+form{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+#dolacz{
+	display: block;
+
+}
+#czesc1, #czesc2{
+	padding: 10px;
+}
+input[name=imie], input[name=nazwisko], input[name=telefon], input[name=mail]{
+	position: relative;
+	left: 20px;
+}
+#kobieta{
+	position: relative;
+	left: 20px;
+}
+#mezczyzna{
+	position: relative;
+	left: 60px;
+}
+#mezczyznadod{
+	position: relative;
+	left: 60px;
+}
+input[name=plec]{
+	position: relative;
+	left: 20px;
+}
+select{
+	width: 150px;
+	position: relative;
+	left: 20px;
+}
+#uwagitxt{
+	left: 0px;
+}
+textarea{
+	width: 100%;
+	left: 0px;
+}
+#druga, #drugatxt{
+	left: 0px;
+}
+#hide{
+	left: 0px;
+}
+input[name=imie2], input[name=nazwisko2]{
+	position: relative;
+	left: 20px;
+}
+#zapisz{
+	position: relative;
+	left: 0;
+	top: 0px;
+}
+}

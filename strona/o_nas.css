@@ -1,0 +1,159 @@
+.title{
+	font-family: 'Cherry Swash', cursive;
+	font-size: 50px;
+	text-align: left;
+	color: #DC0073;
+}
+.text{
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	margin: 20px;
+}
+.container{
+	height: 1700px;
+}
+#content{
+	width: 90%;
+	margin: auto;
+}
+#p1 {
+	margin-left: 5%;
+}
+#p2 {
+	margin-left: 5%;
+}
+#img_container{
+		width: 40%;
+}
+#text_container{
+	width: 60%;
+	position: relative;
+	bottom: 100%;
+	left: 40%;
+}
+#img_container img{
+	position: relative;
+	border-radius: 25px 0px 25px 0px;
+	width: 100%;
+}
+#op{
+	text-align: right;
+}
+#hist{
+	text-align: right;
+}
+#zal{
+	text-align: right;
+}
+#cel{
+	text-align: right;
+}
+#content2{
+	width: 90%;
+	margin: auto;
+	height: 350px;
+	text-align: center;
+}
+#instructors{
+	width: 50%;
+	height: 350px;
+}
+#opinion{
+	width: 50%;
+	position: relative;
+	bottom: 100%;
+	left: 50%;
+	height: 350px;
+}
+#opinion img{
+	width: 95%;
+	position: relative;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+}
+#instructors img{
+	width: 95%;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+}
+#opinion img:hover{
+	width:98%;
+	box-shadow: 0px 0px 15px grey;
+	transition: all 0.3s ease-in-out;
+}
+#instructors img:hover{
+	width:98%;
+	box-shadow: 0px 0px 15px grey;
+	transition: all 0.3s ease-in-out;
+}
+figcaption {
+	position: relative;
+	font-family: 'Rubik', sans-serif;
+	left: 50px;
+	font-size: 30px;
+	background-color: #41EAD4;	
+	color: #DC0073;
+	border-radius: 8px;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+figure:hover figcaption
+{
+	opacity: 1;
+}
+#krotkie{
+	top: -11%;
+	left: 40%;
+	width: 150px;
+}
+#dlugie{
+	top: -11%;
+	left: 27%;
+	width: 250px;
+}
+@media only screen and (max-width: 600px) {
+	#content{
+		margin-top:1300px;
+		height: 3000px;
+	}
+	#content2{
+		height: 1500px;
+	}
+	#content2 img{
+		width: 200%;
+	}
+	#opinion{
+		position: absolute;
+		top: 910%;
+		left: 5%;
+	}
+	#instructors{
+		position: absolute;
+		top: 960%;
+		left: 7%;
+	}
+	#img_container img{
+		width: 200%;
+		left: 25%;
+		margin-bottom: 680%;
+	}
+	#img_container{
+		position: absolute;
+		top: 1000px;
+	}
+	#text_container {
+		bottom: 1300px;
+		width: 100%;
+		left: 0%;
+	}
+	#text_container p{
+		margin-bottom: 300px;
+	}
+	figcaption {
+		opacity: 1;
+	}
+	#krotkie{
+		left: 60%;
+	}
+}

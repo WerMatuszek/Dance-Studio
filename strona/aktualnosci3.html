@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title > Dance Studio </title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="aktualnosci.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script>
+		function formularz() {
+			window.open("formularz.html","_blank", "menubar=no, width=1000, height=600"); 
+
+		}
+	</script>
+	<script>
+		$(document).ready(function() {
+			$("#wiecej1").click(function() {
+				$("#text_wiecej1").slideToggle("slow", function() {
+					if($("#text_wiecej1").is(":visible")) {
+						$("#wiecej1").text("Schowaj"); } 
+					else {
+						$("#wiecej1").text("Chcę przeczytać więcej!"); }
+				});
+			});
+			$("#wiecej2").click(function() {
+				$("#text_wiecej2").slideToggle("slow", function() {
+					if($("#text_wiecej2").is(":visible")) {
+						$("#wiecej2").text("Schowaj"); } 
+					else {
+						$("#wiecej2").text("Chcę przeczytać więcej!"); }
+				});
+			});
+			$("#wiecej3").click(function() {
+				$("#text_wiecej3").slideToggle("slow", function() {
+					if($("#text_wiecej3").is(":visible")) {
+						$("#wiecej3").text("Schowaj"); } 
+					else {
+						$("#wiecej3").text("Chcę przeczytać więcej!"); }
+				});
+			});
+		}); 
+	</script>
+</head>
+
+<body>
+	<header>
+		<a href="glowna.html">
+			<img src="img/logo.png" id="logo">
+		</a>
+		<h1 id="name"><a href="glowna.html"> Dance Studio </a></h1>
+		<a href="https://twitter.com/">
+			<img src="img/twitter.png" id="social">
+		</a><a href="https://facebook.com/">
+			<img src="img/fb.png" id="social">
+		</a><a href="https://instagram.com/">
+			<img src="img/ig.png" id="social">
+		</a>
+	</header>
+	<br></br>
+	
+	<ul id="menu">
+		<li><a href="aktualnosci.html"> Aktualności </a></li>
+		<li><a href="o_nas.html"> O nas </a>
+			<ul>
+				<li><a href="instruktorzy.html"> Instruktorzy </a></li>
+				<li><a href="opinie.html"> Opinie </a></li>
+			</ul>
+		</li>
+		<li><a href="kursy.html"> Kursy </a>
+			<ul>
+				<li><a href="dzieci.html"> Dla dzieci </a></li>
+				<li><a href="mlodziez.html"> Dla młodzieży </a></li>
+				<li><a href="kobiety.html"> Dla kobiet </a></li>
+				<li><a href="pary.html"> Taniec w parach </a></li>
+			</ul>
+		</li>
+		<li><a href="cennik.html"> Cennik </a></li>
+		<li><a href="grafik.html"> Grafik </a></li>
+		<li><a href="galeria.html"> Galeria </a></li>
+		<li><a href="kontakt.html"> Kontakt </a></li>
+	</ul>
+	<br></br>
+	
+	<div id="form", onclick="formularz()"> 
+		Zapisz się!
+	</div>
+	
+	<div id="akt">
+		<figure>
+			<img src="img/akt31.jpg" id="photo_akt">
+			<figcaption> Lorem ipsum </figcaption>
+		</figure>
+		<div id="text">
+			<h1 id="tytul"> Lorem ipsum </h1>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lorem congue, lobortis nisi at, fringilla felis. 
+			Etiam id leo id lorem cursus maximus. Nullam dapibus turpis vitae velit ornare volutpat. In aliquet, sem condimentum porttitor egestas, 
+			libero nisl ultrices turpis, ac cursus purus justo sed ex. Morbi dui sapien, malesuada at enim sed, condimentum pulvinar ipsum. 
+			Quisque ut dictum mauris. Donec vitae blandit sapien, ut tempus lacus. Integer vitae lectus et turpis aliquet mollis.<br></br>
+			<p id="wiecej1" class="wiecej"> Chcę przeczytać więcej! </p>
+		</div>
+	</div>
+	<div id="text_wiecej1" class="text_wiecej" style="display: none;">
+			Sed sed lacus eleifend massa venenatis iaculis quis vel purus. Cras enim ipsum, scelerisque quis congue eu, aliquet vel orci. 
+			Cras non lacus maximus, euismod mauris non, porta augue. Phasellus non nulla iaculis, fringilla purus sed, ultrices sapien. 
+			Ut nibh diam, mattis sed aliquet quis, mollis at augue. Etiam quis quam id lacus faucibus congue. Fusce nisi leo, auctor non nisi nec, 
+			tempor mattis augue. Ut molestie nisl vel hendrerit consectetur. <br></br>
+			Nullam sed mi risus. In hac habitasse platea dictumst. Donec sed lorem at nisl malesuada rutrum. Fusce bibendum ante lectus, 
+			a dictum quam tincidunt vitae. Praesent semper est id nisi pretium, et molestie lectus rhoncus. Vivamus viverra ligula id leo volutpat, 
+			sit amet tristique magna venenatis. Pellentesque volutpat eu nisi ultricies vestibulum. Cras semper dapibus feugiat. <br></br>
+			Ut augue enim, tincidunt et iaculis et, faucibus at diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+			Vivamus aliquet, arcu a aliquam semper, ex leo sagittis dui, eget elementum dolor risus eu libero. Donec et suscipit neque. 
+			Vestibulum ut venenatis turpis. Cras consequat hendrerit quam, vitae placerat ex suscipit in. In ornare neque id risus hendrerit dapibus. 
+			Curabitur eros orci, porta sit amet tellus ut, tristique facilisis lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+			Nullam a rutrum urna, ac mollis mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eget lacinia diam. 
+			Sed sit amet purus nunc. Nullam euismod condimentum euismod. Quisque tincidunt, ante ut rhoncus ullamcorper, magna arcu pharetra purus, 
+			quis lobortis turpis orci quis tortor.
+	</div>
+	
+	<div id="akt">
+		<figure>
+			<img src="img/akt32.jpg" id="photo_akt">
+			<figcaption> Lorem ipsum </figcaption>
+		</figure>
+		<div id="text">
+			<h1 id="tytul"> Lorem ipsum </h1>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lorem congue, lobortis nisi at, fringilla felis. 
+			Etiam id leo id lorem cursus maximus. Nullam dapibus turpis vitae velit ornare volutpat. In aliquet, sem condimentum porttitor egestas, 
+			libero nisl ultrices turpis, ac cursus purus justo sed ex. Morbi dui sapien, malesuada at enim sed, condimentum pulvinar ipsum. 
+			Quisque ut dictum mauris. Donec vitae blandit sapien, ut tempus lacus. Integer vitae lectus et turpis aliquet mollis.<br></br>
+			<p id="wiecej2" class="wiecej"> Chcę przeczytać więcej! </p>
+		</div>
+	</div>
+	<div id="text_wiecej2" class="text_wiecej" style="display: none;">
+			Sed sed lacus eleifend massa venenatis iaculis quis vel purus. Cras enim ipsum, scelerisque quis congue eu, aliquet vel orci. 
+			Cras non lacus maximus, euismod mauris non, porta augue. Phasellus non nulla iaculis, fringilla purus sed, ultrices sapien. 
+			Ut nibh diam, mattis sed aliquet quis, mollis at augue. Etiam quis quam id lacus faucibus congue. Fusce nisi leo, auctor non nisi nec, 
+			tempor mattis augue. Ut molestie nisl vel hendrerit consectetur. <br></br>
+			Nullam sed mi risus. In hac habitasse platea dictumst. Donec sed lorem at nisl malesuada rutrum. Fusce bibendum ante lectus, 
+			a dictum quam tincidunt vitae. Praesent semper est id nisi pretium, et molestie lectus rhoncus. Vivamus viverra ligula id leo volutpat, 
+			sit amet tristique magna venenatis. Pellentesque volutpat eu nisi ultricies vestibulum. Cras semper dapibus feugiat. <br></br>
+			Ut augue enim, tincidunt et iaculis et, faucibus at diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+			Vivamus aliquet, arcu a aliquam semper, ex leo sagittis dui, eget elementum dolor risus eu libero. Donec et suscipit neque. 
+			Vestibulum ut venenatis turpis. Cras consequat hendrerit quam, vitae placerat ex suscipit in. In ornare neque id risus hendrerit dapibus. 
+			Curabitur eros orci, porta sit amet tellus ut, tristique facilisis lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+			Nullam a rutrum urna, ac mollis mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eget lacinia diam. 
+			Sed sit amet purus nunc. Nullam euismod condimentum euismod. Quisque tincidunt, ante ut rhoncus ullamcorper, magna arcu pharetra purus, 
+			quis lobortis turpis orci quis tortor.
+	</div>
+	
+	<div id="akt">
+		<figure>
+			<img src="img/akt33.jpg" id="photo_akt">
+			<figcaption> Lorem ipsum </figcaption>
+		</figure>
+		<div id="text">
+			<h1 id="tytul"> Lorem ipsum </h1>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et lorem congue, lobortis nisi at, fringilla felis. 
+			Etiam id leo id lorem cursus maximus. Nullam dapibus turpis vitae velit ornare volutpat. In aliquet, sem condimentum porttitor egestas, 
+			libero nisl ultrices turpis, ac cursus purus justo sed ex. Morbi dui sapien, malesuada at enim sed, condimentum pulvinar ipsum. 
+			Quisque ut dictum mauris. Donec vitae blandit sapien, ut tempus lacus. Integer vitae lectus et turpis aliquet mollis.<br></br>
+			<p id="wiecej3" class="wiecej"> Chcę przeczytać więcej! </p>
+		</div>
+	</div>
+	<div id="text_wiecej3" class="text_wiecej" style="display: none;">
+			Sed sed lacus eleifend massa venenatis iaculis quis vel purus. Cras enim ipsum, scelerisque quis congue eu, aliquet vel orci. 
+			Cras non lacus maximus, euismod mauris non, porta augue. Phasellus non nulla iaculis, fringilla purus sed, ultrices sapien. 
+			Ut nibh diam, mattis sed aliquet quis, mollis at augue. Etiam quis quam id lacus faucibus congue. Fusce nisi leo, auctor non nisi nec, 
+			tempor mattis augue. Ut molestie nisl vel hendrerit consectetur. <br></br>
+			Nullam sed mi risus. In hac habitasse platea dictumst. Donec sed lorem at nisl malesuada rutrum. Fusce bibendum ante lectus, 
+			a dictum quam tincidunt vitae. Praesent semper est id nisi pretium, et molestie lectus rhoncus. Vivamus viverra ligula id leo volutpat, 
+			sit amet tristique magna venenatis. Pellentesque volutpat eu nisi ultricies vestibulum. Cras semper dapibus feugiat. <br></br>
+			Ut augue enim, tincidunt et iaculis et, faucibus at diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+			Vivamus aliquet, arcu a aliquam semper, ex leo sagittis dui, eget elementum dolor risus eu libero. Donec et suscipit neque. 
+			Vestibulum ut venenatis turpis. Cras consequat hendrerit quam, vitae placerat ex suscipit in. In ornare neque id risus hendrerit dapibus. 
+			Curabitur eros orci, porta sit amet tellus ut, tristique facilisis lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+			Nullam a rutrum urna, ac mollis mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eget lacinia diam. 
+			Sed sit amet purus nunc. Nullam euismod condimentum euismod. Quisque tincidunt, ante ut rhoncus ullamcorper, magna arcu pharetra purus, 
+			quis lobortis turpis orci quis tortor.
+	</div>
+
+	<div id="klik">
+		<a href="aktualnosci2.html"><div class="poprzedni"> &#8249; </div></a>
+		&emsp;&emsp;&emsp;&emsp;
+		<div class="nastepny end"> &#8250; </div>
+	</div>
+	
+	<br></br><br></br><br></br><br></br>
+	<footer>
+		<a href="https://twitter.com/">
+			<img src="img/twitter.png" id="social2">
+		</a><a href="https://facebook.com/">
+			<img src="img/fb.png" id="social2">
+		</a><a href="https://instagram.com/">
+			<img src="img/ig.png" id="social2">
+		</a>
+		<div id="f_kontakt">
+			<p style="color: #DC0073;"> KONTAKT </p>
+			<p> telefon: 123-456-789 </p>
+			<p> e-mail: dance-studio@mail.com </p>
+		</div>
+		<div id="f_adres">
+			<p style="color: #DC0073;"> ADRES </p>
+			<p> ul. Lorem ipsum 1 </p>
+			<p> Kraków 123-45</p>
+		</div>
+		<div id="f_otwarci">
+			<p style="color: #DC0073;"> GODZINY OTWARCIA </p>
+			<p> od poniedziałku do piątku </p>
+			<p> 15:00 - 21:30 </p>
+			<p> soboty </p>
+			<p> 9:30 - 14:00 </p>
+		</div>
+	</footer>
+</body>
+</html>

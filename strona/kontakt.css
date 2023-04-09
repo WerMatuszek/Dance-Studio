@@ -1,0 +1,111 @@
+.title{
+	font-family: 'Cherry Swash', cursive;
+	font-size: 50px;
+	text-align: center;
+	color: #DC0073;
+}
+.text{
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 20px;
+}
+#container{
+	margin-top: 2%;
+	margin-left: 10%;
+	height: 640px;
+	//width: 1200px;
+	width: 80%;
+}
+#map{
+	float: left;
+	height: 500px;
+	width: 58%;
+	margin: 0.5%;
+}
+iframe{
+	height: 100%;
+	width:  100%;
+}
+#adres{
+	float: left;
+	height: 250px;
+	width: 38%;
+	margin: 0.5%;
+}
+#contact{
+	float: left;
+	height: 237px;
+	width: 38%;
+	margin: 0.5%;
+}
+#hours{
+	float: left;
+	height: 200px;
+	width: 97%;
+	margin: 0.5%;
+}
+#hourstable{
+	width: 99%;
+}
+#hourstable th{
+	font-size: 22px;
+}
+#hourstable td{
+	text-align: center;
+	font-size: 20px;
+	width: 15%;
+	border-right: 1px solid black;
+}
+#hourstable td:last-child{
+	border: none;
+}
+@media only screen and (max-width: 600px) {
+	#container{
+	margin-top: 2%;
+	margin-left: 10%;
+	height: 1200px;
+	width: 100%;
+}		
+	#map{
+		float: none;
+		height: 400px;
+		width: 100%;
+		margin-top: 80%;
+		margin-bottom: 5%;
+		margin-left: -2%;
+		}
+	iframe{
+		height: 100%;
+		width:  100%;
+	}
+	#adres{
+		float: none;
+		height: 250px;
+		width: 100%;
+		margin-bottom: 5%;
+		margin-left: -2%;
+	}
+	#contact{
+		float: none;
+		height: 237px;
+		width: 100%;
+		margin-bottom: 5%;
+		margin-left: -2%;
+	}
+	#hours{
+		float: none;
+		height: 200px;
+		width: 100%;
+		margin-bottom: 5%;
+		margin-left: -2%;
+	}
+		#hourstable{
+		left: -10%;
+		position: relative;
+		width: 10%;
+	}
+	#hourstable th{
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,19 @@
+1.	
+CREATE OR REPLACE FUNCTION ilosc_rachunkow405616( p varchar(50) )
+RETURNS bigint AS 'SELECT pesel, COUNT(nrKonta) FROM
+dane405616 GROUP BY pesel HAVING pesel=p;' LANGUAGE SQL;
+2.	
+CREATE OR REPLACE FUNCTION dane_klienta405616(p varchar(50))
+RETURNS varchar(50) AS 
+$$ SELECT imie || ' ' || nazwisko FROM klient405616WHERE pesel=p; $$ 
+LANGUAGE SQL;
+3.	
+CREATE OR REPLACE FUNCTION format405616(p varchar(50))
+RETURNS varchar(50) AS
+$$ SELECT UPPER(nazwisko) FROM klient405616 WHERE pesel=p; $$
+LANGUAGE SQL;
+4.
+CREATE OR REPLACE FUNCTION srodki_pieniezne405616(p varchar(50))
+RETURNS TABLE(pesel varchar(50), srodki bigint) AS
+'SELECT pesel, SUM(kwota) FROM kontoJO JOIN dane405616 ON kontoJO.nrKonta=dane405616.nrKonta GROUP BY pesel HAVING pesel=p;'
+LANGUAGE SQL;

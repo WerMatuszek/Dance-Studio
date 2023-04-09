@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title > Dance Studio </title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="glowna.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script>
+		function formularz() {
+			window.open("formularz.html","_blank", "menubar=no, width=1000, height=600"); 
+
+		}
+</script>
+</head>
+
+<body>
+	<header>
+		<a href="glowna.html">
+			<img src="img/logo.png" id="logo">
+		</a>
+		<h1 id="name"><a href="glowna.html"> Dance Studio </a></h1>
+		<a href="https://twitter.com/">
+			<img src="img/twitter.png" id="social">
+		</a><a href="https://facebook.com/">
+			<img src="img/fb.png" id="social">
+		</a><a href="https://instagram.com/">
+			<img src="img/ig.png" id="social">
+		</a>
+	</header>
+	<br></br>
+	
+	<ul id="menu">
+		<li><a href="aktualnosci.html"> Aktualności </a></li>
+		<li><a href="o_nas.html"> O nas </a>
+			<ul>
+				<li><a href="instruktorzy.html"> Instruktorzy </a></li>
+				<li><a href="opinie.html"> Opinie </a></li>
+			</ul>
+		</li>
+		<li><a href="kursy.html"> Kursy </a>
+			<ul>
+				<li><a href="dzieci.html"> Dla dzieci </a></li>
+				<li><a href="mlodziez.html"> Dla młodzieży </a></li>
+				<li><a href="kobiety.html"> Dla kobiet </a></li>
+				<li><a href="pary.html"> Taniec w parach </a></li>
+			</ul>
+		</li>
+		<li><a href="cennik.html"> Cennik </a></li>
+		<li><a href="grafik.html"> Grafik </a></li>
+		<li><a href="galeria.html"> Galeria </a></li>
+		<li><a href="kontakt.html"> Kontakt </a></li>
+	</ul>
+	<br></br>
+	
+	<div id="form", onclick="formularz()"> 
+		Zapisz się!
+	</div>
+	
+	<div id="about">
+		<img src="img/main1.jpg" id="photo1">
+		<div id="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at commodo lectus.
+			Proin maximus pretium enim, non tincidunt felis aliquam vitae. Nullam eget mattis dui.
+			Suspendisse potenti. Mauris aliquam, augue quis ornare pretium, lorem massa ultrices quam, 
+			et laoreet odio libero id eros.
+			<br></br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at commodo lectus.
+			Proin maximus pretium enim, non tincidunt felis aliquam vitae. Nullam eget mattis dui.
+			Suspendisse potenti. Mauris aliquam, augue quis ornare pretium, lorem massa ultrices quam, 
+			et laoreet odio libero id eros.
+			<br></br>
+			<p id="wiecej"><a href="o_nas.html"> Dowiedz się więcej </a></p>
+		</div>
+	</div>
+	<br></br>
+	
+	<h1 id="nasze_kursy"> Nasze kursy </h1>
+	<br></br>
+	
+	<div id="kursy">
+		<figure>
+			<a href="dzieci.html">
+			<img src="img/main2.jpg" id="photo_kurs"></a>
+			<figcaption id="krotkie"> DLA DZIECI </figcaption>
+		</figure>
+		<figure>
+			<a href="mlodziez.html">
+			<img src="img/main3.jpg" id="photo_kurs"></a>
+			<figcaption id="dlugie"> DLA MŁODZIEŻY </figcaption>
+		</figure>
+		<figure>
+			<a href="kobiety.html">
+			<img src="img/main4.jpg" id="photo_kurs"></a>
+			<figcaption id="krotkie"> DLA KOBIET </figcaption>
+		</figure>
+		<figure>
+			<a href="pary.html">
+			<img src="img/main5.jpg" id="photo_kurs"></a>
+			<figcaption id="dlugie"> TANIEC W PARACH </figcaption>
+		</figure>
+	</div>
+	
+	<br></br><br></br><br></br><br></br>
+	<footer>
+		<a href="https://twitter.com/">
+			<img src="img/twitter.png" id="social2">
+		</a><a href="https://facebook.com/">
+			<img src="img/fb.png" id="social2">
+		</a><a href="https://instagram.com/">
+			<img src="img/ig.png" id="social2">
+		</a>
+		<div id="f_kontakt">
+			<p style="color: #DC0073;"> KONTAKT </p>
+			<p> telefon: 123-456-789 </p>
+			<p> e-mail: dance-studio@mail.com </p>
+		</div>
+		<div id="f_adres">
+			<p style="color: #DC0073;"> ADRES </p>
+			<p> ul. Lorem ipsum 1 </p>
+			<p> Kraków 123-45</p>
+		</div>
+		<div id="f_otwarci">
+			<p style="color: #DC0073;"> GODZINY OTWARCIA </p>
+			<p> od poniedziałku do piątku </p>
+			<p> 15:00 - 21:30 </p>
+			<p> soboty </p>
+			<p> 9:30 - 14:00 </p>
+		</div>
+	</footer>
+</body>
+</html>

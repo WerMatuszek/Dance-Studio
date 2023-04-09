@@ -1,0 +1,113 @@
+/*paragraf o nas i zdjęcie*/
+#about{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin: auto;
+	padding: 50px 150px;
+}
+#photo1{
+	width: 500px;
+	border-radius: 20px 2px 20px 2px;
+}
+#text{
+	padding-left: 50px;
+	font-family: 'Rubik', sans-serif;
+	text-align: justify;
+	text-justify: auto;
+}
+#wiecej a{
+	text-decoration: none;
+	color: #DC0073;
+	float: right;
+	transition: all 0.2s ease-in;
+}
+#wiecej a:hover{
+	color: #41EAD4;
+}
+
+/*kursy*/
+#nasze_kursy{
+	font-family: 'Cherry Swash', cursive;
+	color: #DC0073;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+}
+#kursy{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#photo_kurs{
+	padding: 20px;
+	height: 400px;
+	width: 250px;
+	object-fit: cover;
+	transition: all 0.5s ease-in-out;
+}
+#photo_kurs:hover{
+	height: 440px;
+	width: 260px;
+	z-index: 1;
+}
+
+figure{
+	position: relative;
+	text-align: center;
+}
+figcaption 
+{
+	position: absolute;
+	font-family: 'Rubik', sans-serif;
+	left: 50px;
+	width: 200px; 
+	font-size: 30px;
+	background-color: #41EAD4;	
+	color: #DC0073;
+	border-radius: 8px;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+#krotkie{
+	height: 35px; 
+	top: 415px;
+}
+#dlugie{
+	height: 70px;
+	top: 375px;
+}
+figure:hover figcaption
+{
+	opacity: 0.9;
+}
+
+@media only screen and (max-width: 600px) {
+#about{
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+#text{
+	display: block;
+}
+#kursy{
+	display: block;
+}
+#photo1{
+	width: 100%;
+	padding: 30px;
+}
+#photo_kurs{
+	width: 100%;
+	padding: 30px;
+}
+#nasze_kursy{
+	text-align: center;
+	display: block;
+}
+figcaption{
+	opacity: 0.9;
+}
+}
